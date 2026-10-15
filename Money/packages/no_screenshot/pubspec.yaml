@@ -1,0 +1,43 @@
+name: no_screenshot
+description: Project-local mobile and web screenshot protection compatibility plugin.
+version: 1.2.0
+homepage: https://flutterplaza.com
+repository: https://github.com/FlutterPlaza/no_screenshot
+
+topics:
+  - screenshot
+  - security
+  - privacy
+  - screen-capture
+  - app-switcher
+
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+  flutter: ">=3.38.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.8
+  web: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ">=4.0.0 <6.0.0"
+  flutter_driver:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.flutterplaza.no_screenshot
+        pluginClass: NoScreenshotPlugin
+      ios:
+        pluginClass: NoScreenshotPlugin
+      web:
+        pluginClass: NoScreenshotWeb
+        fileName: no_screenshot_web.dart

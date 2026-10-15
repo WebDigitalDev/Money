@@ -1,0 +1,43 @@
+package com.webdigital.money2.clients;
+
+import java.time.LocalDateTime;
+
+public record ClientDetailResponse(
+        long id,
+        String name,
+        String legalName,
+        String document,
+        String email,
+        String type,
+        String stateRegistration,
+        LocalDateTime birthDate,
+        String mobilePhone,
+        String phone,
+        String secondaryPhone,
+        String homepage,
+        boolean enabled,
+        LocalDateTime createdAt,
+        LocalDateTime updatedAt,
+        long postalCode,
+        Long cityId,
+        String cityName,
+        String cityState,
+        String address,
+        String number,
+        String complement,
+        String neighborhood,
+        String collector,
+        String googleMapsLink,
+        Double latitude,
+        Double longitude,
+        Double businessLatitude,
+        Double businessLongitude,
+        long regionId,
+        String regionName,
+        String notes,
+        String business,
+        String facebook,
+        String instagram,
+        ClientStatus status,
+        ClientScoreResponse score) {
+}

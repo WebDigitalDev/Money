@@ -1,0 +1,36 @@
+# Operating system and editor files
+.DS_Store
+**/.DS_Store
+.vscode/
+**/.idea/
+*.iml
+
+# Local build output and caches
+**/.gradle/
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/build/
+**/target/
+**/local.properties
+**/*.apk
+!money2/appupdate/android/money.apk
+**/*.aab
+**/*.xcarchive/
+**/mapping.txt
+
+# Signing credentials and local environment files
+**/key.properties
+**/*.jks
+**/*.keystore
+**/.env
+**/.env.*
+!**/.env.example
+
+# Workspace-only notes, reports, backups, and generated captures
+.playwright-mcp/
+.old-*/
+output/
+tmp/
+ssh.txt
+backup-estorno*.json

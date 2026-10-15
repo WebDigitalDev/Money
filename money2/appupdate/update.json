@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "publishedAt": "2026-10-13T10:46:38-04:00",
+  "android": {
+    "available": true,
+    "minimumBuild": 39,
+    "latestBuild": 39,
+    "version": "1.0.38",
+    "downloadUrl": "https://moneyapp.site/appupdate/android/money.apk",
+    "size": 79313438,
+    "sha256": "c9ec2fa4ca443f6f6b72ffbd3dfe86a54aac775e6d1167e64614b52af0cf4bb5"
+  },
+  "ios": {
+    "available": true,
+    "minimumBuild": 39,
+    "latestBuild": 39,
+    "version": "1.0.38",
+    "installUrl": "itms-services://?action=download-manifest&url=https%3A%2F%2Fmoneyapp.site%2Fappupdate%2Fios%2Fmanifest-1.0.38%2B39.plist"
+  },
+  "web": {
+    "available": true,
+    "releaseId": "2026.10.13.1"
+  }
+}

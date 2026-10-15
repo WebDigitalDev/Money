@@ -1,0 +1,33 @@
+[Unit]
+Description=Qdrant vector database for Money API V2
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=qdrant
+Group=qdrant
+WorkingDirectory=/var/lib/qdrant
+EnvironmentFile=/etc/qdrant/qdrant.env
+ExecStart=/usr/local/bin/qdrant --config-path /etc/qdrant/config.yaml
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/var/lib/qdrant
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+LockPersonality=true
+UMask=0077
+LimitNOFILE=65536
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=qdrant-money2
+
+[Install]
+WantedBy=multi-user.target

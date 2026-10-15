@@ -1,0 +1,33 @@
+[Unit]
+Description=Money API V2
+After=network-online.target postgresql.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=money
+Group=money
+WorkingDirectory=/home/money/money2
+EnvironmentFile=/home/money/money2/config/money2.env
+ExecStart=/usr/bin/java -Xms128m -Xmx512m -jar /home/money/money2/app/money2.jar
+Restart=on-failure
+RestartSec=5
+SuccessExitStatus=143
+TimeoutStopSec=30
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/home/money/money2/data
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+LockPersonality=true
+UMask=0077
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=money2
+
+[Install]
+WantedBy=multi-user.target
