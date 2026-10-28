@@ -1,0 +1,5 @@
+spring.datasource.url=${MONEY2_DB_URL}
+spring.datasource.username=${MONEY2_DB_USERNAME}
+spring.datasource.password=${MONEY2_DB_PASSWORD}
+
+money.security.jwt-secret=${MONEY2_JWT_SECRET}

@@ -26,6 +26,18 @@
 **/.env
 **/.env.*
 !**/.env.example
+**/*.env
+!**/*.env.example
+Backend/config/application-production.properties
+**/*.p12
+**/*.pfx
+**/*.p8
+**/*.pem
+**/*.key
+**/*.mobileprovision
+**/*.ipa
+**/*.jar
+**/*.log
 
 # Workspace-only notes, reports, backups, and generated captures
 .playwright-mcp/
@@ -34,3 +46,11 @@ output/
 tmp/
 ssh.txt
 backup-estorno*.json
+Backend/backups/
+Backend/data/
+Backend/app/
+Backend/appupdate/
+Backend/staging/
+Backend/target/
+**/*.bak
+**/*.backup*

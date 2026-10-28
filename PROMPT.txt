@@ -1,9 +1,0 @@
-Veja minha aplicação flutter local, ela é uma nova aplicação sendo contruida com base na antiga aplicação money,
-Pode acessar ela pelo ssh.txt servidor money.
-
-Ambos backend está no servidor, a nova aplicação está com seu backend na pasta money2.
-Jamais altere nada no app antigo money pois ele está não está cendo usado, ele serve apenas para analise.
-
-Localmente tem a pasta money2 tambem que é o backend que sobe para o servidor se voce analisar.
-
-ao modificar o backend ou app flutter, leia o arquivo ATUALIZAÇÃO.md para entender como é o fluxo.
